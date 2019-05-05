@@ -1,0 +1,113 @@
+/* General */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #181818;
+    color: #E7ECEF;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Basic Styling */
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+h1 span {
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+}
+
+a:link {
+    color: #E7ECEF;
+}
+a:visited {
+    color: #E7ECEF;
+}
+a:hover {
+    color: #76FBD6;
+}
+a:active {
+    color: #159F9E;
+}
+
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ffb7b7; /* Gecko Browsers */
+  }
+/* layout details */
+#container {
+    max-width: 56.25rem;
+    padding: 1.5rem;
+    margin: auto;
+}
+
+#logo {
+    margin-bottom: 20vh;
+}
+
+#hello {
+    margin-bottom: 10vh;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.section-name {
+    float: left;
+    font-weight: 600;
+    width: 25%;
+}
+.section-content {
+    float: right;
+    width: 75%;
+    padding-right: 5vw;
+}
+
+#circle {
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    background: #FF5F00;
+    box-shadow: 0 0 5px 0 #FF6000;
+
+
+    float: right;
+    margin-top: 0.4em;
+    margin-right: 2vw;
+}
+/* media breakdpoints */
+@media screen and (max-width: 640px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    #logo {
+        margin-bottom: 10vh;
+    }
+
+    .section-name {
+        width: 100%;
+        padding-bottom: 1vh;
+    }
+    .section-content {
+        float: right;
+        width: 100%;
+    }
+
+    #circle {
+    float: left;
+    margin-top: 0.4em;
+    margin-right: 2vw;
+    }
+}

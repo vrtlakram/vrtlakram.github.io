@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Rough" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation-2-Copy" transform="translate(-271.000000, -38.000000)" fill="#FAFBFF" fill-rule="nonzero">
+            <g id="Logo" transform="translate(293.000000, 60.000000) rotate(-315.000000) translate(-293.000000, -60.000000) translate(278.000000, 45.000000)">
+                <path d="M0,0 L30,0 L30,30 L0,30 L0,0 Z M3,3 L3,27 L27,27 L27,3 L3,3 Z" id="Rectangle-2"></path>
+                <path d="M15,23.4 C10.3608081,23.4 6.6,19.6391919 6.6,15 C6.6,10.3608081 10.3608081,6.6 15,6.6 C19.6391919,6.6 23.4,10.3608081 23.4,15 C23.4,19.6391919 19.6391919,23.4 15,23.4 Z M15,20.4 C17.9823376,20.4 20.4,17.9823376 20.4,15 C20.4,12.0176624 17.9823376,9.6 15,9.6 C12.0176624,9.6 9.6,12.0176624 9.6,15 C9.6,17.9823376 12.0176624,20.4 15,20.4 Z" id="Oval-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
