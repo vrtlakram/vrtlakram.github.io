@@ -4,8 +4,8 @@
   }
 
 body {
-    background-color: #181818;
-    color: #E7ECEF;
+    background-color: #FFFFFF;
+    color: #383E41;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
@@ -25,23 +25,27 @@ p {
 }
 
 a:link {
-    color: #E7ECEF;
+    color: #383E41;
 }
 a:visited {
-    color: #E7ECEF;
+    color: #383E41;
 }
 a:hover {
-    color: #76FBD6;
+    color: #f98560;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 a:active {
-    color: #159F9E;
+    color: #f98560;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 
 ::selection {
-    background: #ffb7b7; /* WebKit/Blink Browsers */
+    background: #f98560; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #ffb7b7; /* Gecko Browsers */
+    background: #f98560; /* Gecko Browsers */
   }
 /* layout details */
 #container {
