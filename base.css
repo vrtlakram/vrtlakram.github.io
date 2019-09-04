@@ -25,27 +25,29 @@ p {
 }
 
 a:link {
-    color: #383E41;
+    color: #f98560;
+    text-decoration: none;
 }
 a:visited {
-    color: #383E41;
+    color: #f98560;
+    text-decoration: none;
 }
 a:hover {
     color: #f98560;
     text-decoration-line: underline;
-    text-decoration-style: wavy;
 }
 a:active {
     color: #f98560;
     text-decoration-line: underline;
-    text-decoration-style: wavy;
 }
 
 ::selection {
-    background: #f98560; /* WebKit/Blink Browsers */
+    background: #FFEDE2; /* WebKit/Blink Browsers */
+    opacity: 0.5;
   }
   ::-moz-selection {
-    background: #f98560; /* Gecko Browsers */
+    background: #FFEDE2; /* Gecko Browsers */
+    opacity: 0.5;
   }
 /* layout details */
 #container {
@@ -56,6 +58,7 @@ a:active {
 
 #logo {
     margin-bottom: 20vh;
+    font-weight: 600;
 }
 
 #hello {
