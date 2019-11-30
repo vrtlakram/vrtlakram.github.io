@@ -25,28 +25,28 @@ p {
 }
 
 a:link {
-    color: #f98560;
+    color: #ff5858;
     text-decoration: none;
 }
 a:visited {
-    color: #f98560;
+    color: #ff5858;
     text-decoration: none;
 }
 a:hover {
-    color: #f98560;
+    color: #FF8C8C;
     text-decoration-line: underline;
 }
 a:active {
-    color: #f98560;
+    color: #FF8C8C;
     text-decoration-line: underline;
 }
 
 ::selection {
-    background: #FFEDE2; /* WebKit/Blink Browsers */
+    background: #FFCBCB; /* WebKit/Blink Browsers */
     opacity: 0.5;
   }
   ::-moz-selection {
-    background: #FFEDE2; /* Gecko Browsers */
+    background: #FFCBCB; /* Gecko Browsers */
     opacity: 0.5;
   }
 /* layout details */
