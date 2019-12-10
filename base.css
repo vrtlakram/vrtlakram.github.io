@@ -4,8 +4,8 @@
   }
 
 body {
-    background-color: #fbf7f1;
-    color: #383e41;
+    background-color: #fff;
+    color: #1C272D;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
@@ -25,19 +25,19 @@ p {
 }
 
 a:link {
-    color: #ff5858;
+    color: #0846B9;
     text-decoration: none;
 }
 a:visited {
-    color: #ff5858;
+    color: #0846B9;
     text-decoration: none;
 }
 a:hover {
-    color: #FF8C8C;
+    
     text-decoration-line: underline;
 }
 a:active {
-    color: #FF8C8C;
+   
     text-decoration-line: underline;
 }
 
