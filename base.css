@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -65,7 +65,7 @@ a:active {
     margin-bottom: 5vh;
 }
 #profile > img {
-    max-width: 128px;
+    max-width: 200px;
 }
 
 #hello {
@@ -93,6 +93,23 @@ section {
     font-size: 16px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li {
+    display: inline;
+    padding-left: 24px;
+}
+#header > .section-content {
+    padding: 0;
+    margin-top: .5em;
+}
+#header > .section-name {
+    padding: 0;
+    margin-top: .5em;
+}
 #circle {
     width: 0.75em;
     height: 0.75em;
@@ -110,12 +127,16 @@ section {
       line-height: 24px;
     }
 
+    p {
+        font-size: 18px;;
+    }
+
     #profile {
         margin-bottom: 10vh;
     }
 
     #profile > img {
-        max-width: 64px;
+        max-width: 128px;
     }
 
     .section-name {
@@ -131,5 +152,20 @@ section {
     float: left;
     margin-top: 0.4em;
     margin-right: 12px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    li {
+        display: inline;
+        padding-left: 0px;
+        padding-right: 24px;
+    }
+    #header > .section-content {
+        padding: 0;
+        margin-top: 0;
     }
 }
