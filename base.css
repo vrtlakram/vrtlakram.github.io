@@ -12,9 +12,9 @@ body {
 
 /* Basic Styling */
 h1 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 34px;
 }
 h1 span {
     font-weight: 600;
@@ -26,15 +26,14 @@ p {
 
 a:link {
     color: #0846B9;
-    text-decoration: none;
+    text-decoration: underline 1px solid #0846B9;
 }
 a:visited {
     color: #0846B9;
     text-decoration: none;
 }
 a:hover {
-    
-    text-decoration-line: underline;
+    text-decoration: underline 2px solid #0846B9;
 }
 a:active {
    
@@ -95,7 +94,8 @@ section {
 /* media breakdpoints */
 @media screen and (max-width: 640px) {
     h1 {
-      font-size: 24px;
+      font-size: 20px;
+      line-height: 26px;
     }
 
     #logo {
