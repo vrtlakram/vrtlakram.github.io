@@ -111,7 +111,7 @@ li {
     margin-top: .5em;
 }
 #hello > P {
-    width: 64ch;
+    max-width: 64ch;
 }
 #circle {
     width: 0.75em;
