@@ -102,13 +102,16 @@ li {
     display: inline;
     padding-left: 24px;
 }
+#header > .section-name {
+    padding: 0;
+    margin-top: .5em;
+}
 #header > .section-content {
     padding: 0;
     margin-top: .5em;
 }
-#header > .section-name {
-    padding: 0;
-    margin-top: .5em;
+#hello > P {
+    width: 64ch;
 }
 #circle {
     width: 0.75em;
