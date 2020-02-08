@@ -1,0 +1,194 @@
+// Typography
+// ----------
+
+// Required Imports
+@import "colors";
+
+
+// Import font-face through compass
+@include font-face("Avenir DemiBold", font-files("/css/fonts/hinted-AvenirNext-DemiBold.woff2", "/css/fonts/hinted-AvenirNext-DemiBold.woff", "/css/fonts/hinted-AvenirNext-DemiBold.ttf"), "/css/fonts/hinted-AvenirNext-DemiBold.eot", "600", "bold");
+@include font-face("Avenir Medium", font-files("/css/fonts/hinted-AvenirNext-Medium.woff2", "/css/fonts/hinted-AvenirNext-Medium.woff", "/css/fonts/hinted-AvenirNext-Medium.ttf"), "/css/fonts/hinted-AvenirNext-Medium.eot", "normal", "normal");
+@include font-face("Avenir Regular", font-files("/css/fonts/hinted-AvenirNext-Regular.woff2", "/css/fonts/hinted-AvenirNext-Regular.woff", "/css/fonts/hinted-AvenirNext-Regular.ttf"), "/css/fonts/hinted-AvenirNext-Regular.eot", "500", "normal");
+
+// Font Variables
+$font-demibold: "Avenir DemiBold", Helvetica-Neue, Helvetica, Arial, sans-serif;
+$font-medium: "Avenir Medium", Helvetica-Neue, Helvetica, Arial, sans-serif;
+$font-regular: "Avenir Regular", Helvetica-Neue, Helvetica, Arial, sans-serif;
+
+// Font Smoothing
+html, body {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+
+// Font Family and colors
+h1, h2, h3, h4 {
+	color: $black;
+
+	font-family: $font-medium;
+	line-height: 1.37em;
+}
+
+body, p {
+	color: $slate;
+
+	font-family: $font-regular;
+	line-height: 2em;
+}
+
+b {
+	font-family: $font-medium;
+}
+a {
+	color: $blue;
+	text-decoration: none;
+
+	transition: 0.2s ease-in;
+
+	&:hover {
+		color: $hover;
+		transition: 0.2s ease-in;
+	}
+	&:active {
+		color: $active;
+		transition: inherit;
+	}
+}
+
+
+
+.cta {
+
+	font-family: $font-demibold;
+	text-transform: uppercase;
+
+}
+
+.tag {
+	color: $slate;
+
+	font-family: $font-demibold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+// Font Sizing
+html, body {
+	font-size: 16px;
+	text-align: left;
+
+	@include susy-breakpoint($xsmall, $susy) {
+		font-size: 14px;
+	}
+}
+
+
+p {
+	font-size: 1.13em;
+}
+
+.cta {
+	font-size: 0.875em; letter-spacing: 0.13em;
+	.arrow {
+		display: inline-block;
+		font-size: 1.2rem;
+	}
+}
+
+
+ul li {
+	font-size: 1.13em;
+}
+
+// Perfect Fourth (1.333) (Starting at H2 - type-scale.com) (1200px +)
+h1 {font-size: 2.369em; padding-bottom: 3rem;}
+h2 {font-size: 1.777em; padding-bottom: 3rem;}
+h3 {font-size: 1.266em; padding-bottom: 3rem;}
+h4 {font-size: 1.200em; padding-bottom: 3rem;}
+
+.tag {font-size: 0.875em; letter-spacing: 0.13em;}
+
+// Major Third Ratio (Starting at H2 - type-scale.com) (> 1200px)
+@include susy-breakpoint($large, $susy) {
+
+	h1 {font-size: 1.953em; padding-bottom: 3rem;}
+	h2 {font-size: 1.563em; padding-bottom: 3rem;}
+	h3 {font-size: 1.25em; padding-bottom: 3rem;}
+	h4 {font-size: 1.200em; padding-bottom: 3rem;}
+	
+
+}
+@include susy-breakpoint($medium, $susy) {
+	// Major Third Ratio (Starting at H2 - type-scale.com) (> 768px)
+	h1 {font-size: 1.953em; padding-bottom: 3rem;}
+	h2 {font-size: 1.563em; padding-bottom: 3rem;}
+	h3 {font-size: 1.25em; padding-bottom: 3rem;}
+	h4 {font-size: 1.200em; padding-bottom: 3rem;}
+
+
+	.cta {font-size: 0.8em; letter-spacing: 0.13em;}	
+
+}
+
+@include susy-breakpoint($small, $susy) {
+	// Minor Third Ratio (Starting at H2 - type-scale.com) (> 768px)
+	h1 {font-size: 1.728em; padding-bottom: 3rem;}
+	h2 {font-size: 1.44em; padding-bottom: 3rem;}
+	h3 {font-size: 1.2em; padding-bottom: 3rem;}
+	h4 {font-size: 1.200em; padding-bottom: 3rem;}
+
+	
+
+}
+
+@include susy-breakpoint($xsmall, $susy) {
+		.cta {font-size: 0.875em; letter-spacing: 0.13em;}	
+}
+/*
+@include susy-breakpoint($xsmall, $susy) {
+	// Major Second Ratio (Starting at H2 - type-scale.com) (< 768px)
+	h1 {font-size: 1.424em; padding-bottom: 3rem;}
+	h2 {font-size: 1.266em; padding-bottom: 3rem;}
+	h3 {font-size: 1.125em; padding-bottom: 3rem;}
+
+	.cta {font-size: 0.8em; letter-spacing: 0.13em;}	
+
+}
+*/
+
+// ID specific updates
+nav {
+	p span {
+		line-height: 1.26em;
+		font-size: 1.6em;
+
+		@include susy-breakpoint($large, $susy) {
+			font-size: 1.25em;
+		}
+		@include susy-breakpoint($medium, $susy) {
+			font-size: 1.25em;
+		}
+	}
+	a {
+		font-family: $font-regular;
+		font-size: inherit;
+		text-transform: none;
+		letter-spacing: normal;
+	}
+}
+
+footer {
+
+	line-height: normal;
+	p {
+		line-height: normal;
+		font-size: 1em;
+	}
+	a {
+		font-family: $font-regular;
+		text-transform: none;
+		letter-spacing: normal;
+		font-size: 1em;
+	}
+}

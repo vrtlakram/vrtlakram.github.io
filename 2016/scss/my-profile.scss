@@ -1,0 +1,116 @@
+// Index Styling
+// ==============
+
+// Import Global CSS settings
+@import "style";
+
+
+html {}
+
+body {
+
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.50) 100%, #FFFFFF 100%), url("/img/bg-my-profile.png");
+	background-size: contain;
+	background-repeat: repeat-x;
+	overflow: auto;
+
+	@include susy-breakpoint($small, $susy) {
+		background-image: linear-gradient(0deg, #FFFFFF 34%, #fafbff 100%);
+		background-size: 100% 30%;
+	}
+	&.open {
+		#hello{
+			opacity: 0.99;
+		}
+	}
+} 
+
+p {
+	text-align: justify;}
+
+
+#wrapper {
+	@include container();
+}
+
+#gb {
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.20) 0%, #FFFFFF 100%);
+}
+
+#hello {
+	position: relative;
+	top: 0px;
+	padding-bottom: 16rem;
+
+	@include susy-breakpoint($small, $susy) {
+		padding-bottom: 12rem;
+	}
+	@include susy-breakpoint($xsmall, $susy) {
+		padding-bottom: 12rem;
+	}
+
+
+	h1 {
+		position: relative;
+		@include span(8);
+		z-index: 4;
+
+
+		text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5); //**** fix this
+
+		@include susy-breakpoint($large, $susy) {
+			@include span(8);
+		}
+		@include susy-breakpoint($medium, $susy) {
+			@include span(8);
+		}
+		@include susy-breakpoint($small, $susy) {
+			@include span(10);
+		}
+		@include susy-breakpoint($xsmall, $susy) {
+			@include span(11);
+		}
+	}
+	img{
+		width: span(5 last);
+		padding-left: 1rem;
+		position: absolute;
+		//top: -4rem;
+		top: -8rem;
+		right: 0px;
+		z-index: 2;
+		opacity: 0.9;
+
+		@include susy-breakpoint($medium, $susy) {
+			width: span(6 last);
+			top: 1rem;
+		}
+
+		@include susy-breakpoint($small, $susy) {
+			width: span(7 last);
+			top: 2rem;
+			opacity: 0.6;
+
+		}
+		@include susy-breakpoint($xsmall, $susy) {
+			width: span(10 last);
+			top: 2.7rem;
+			//position: static;
+			opacity: 0.6;
+		}
+	}
+}
+
+#bio {
+}
+
+footer {
+	padding-top: 3rem;
+
+	#outro {
+		@include span(6 last);
+		padding-left: 1rem;
+	}
+}
+
+

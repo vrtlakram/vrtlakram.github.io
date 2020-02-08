@@ -1,0 +1,318 @@
+// Index Styling
+// ==============
+
+// Import Global CSS settings
+@import "style";
+
+
+html {}
+
+body {
+
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.25) 100%, #FFFFFF 100%), url("/img/bg-home.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	overflow: auto;
+
+	@include susy-breakpoint($small, $susy) {
+		background-image: linear-gradient(0deg, #FFFFFF 34%, #e7f9fe 100%);
+		background-size: 100% 50%;
+	}
+} 
+
+
+#wrapper {
+	@include container();
+}
+
+#gb {
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.10) 0%, #FFFFFF 100%);
+}
+
+#hello {
+	h1 {
+		@include span(10);
+
+		@include susy-breakpoint($medium, $susy) {
+			@include span(10);
+		}
+
+		@include susy-breakpoint ($small, $susy) {
+			@include span(full);
+		}
+		@include susy-breakpoint ($xsmall, $susy) {
+			@include span(full);
+		}
+	}
+
+	#mini-bio {
+		@include span(9);
+		span {display: block;}
+		font-size: 1.333em;
+		padding-bottom: 0.8rem;
+
+		@include susy-breakpoint($large, $susy) {
+			font-size: 1.13em;
+		}
+		@include susy-breakpoint($medium, $susy) {
+			font-size: 1.13em;
+			@include span(10);
+		}
+
+		@include susy-breakpoint($small, $susy) {
+			font-size: 1.13em;
+			line-height: 1.5rem;
+			@include span(11);
+		}
+
+		@include susy-breakpoint($xsmall, $susy) {
+			font-size: 1.13em;
+			line-height: 1.5rem;
+			@include span(full);
+		}
+	}
+	#view-case-studies {
+		@include span (3); 
+
+		@include susy-breakpoint ($small, $susy) {
+			@include span(full);
+		}
+	}
+
+	#view-dribbble {
+		@include span (5); 
+
+		@include susy-breakpoint ($small, $susy) {
+			@include span(full);
+		}
+
+		a {
+			color: $dribbble;
+			text-decoration: none;
+
+			transition: 0.2s ease-in;
+
+			&:hover {
+				color: $dribbble-hover;
+				transition: 0.2s ease-in;
+			}
+			&:active {
+				color: $dribbble-active;
+				transition: inherit;
+			}
+		}
+	}
+
+}
+
+#case-studies {
+	padding-top: 1rem;
+
+	.case {
+		@include span(full);
+		padding-bottom: gutter()*3;
+
+		h2 {
+			padding-bottom: 1.5rem;
+		}
+
+		.case-copy {
+			@include span(5 first);
+			.desc {
+				text-align: justify;
+				padding-bottom: 0.8rem;
+				line-height: normal;
+				font-size: 1.13em;
+				@include susy-breakpoint($medium, $susy) {
+					font-size: 1em;
+				}
+				@include susy-breakpoint($small, $susy) {
+					font-size: 1em;
+				}
+			}
+
+			@include susy-breakpoint($medium, $susy) {
+				@include span (6 first);
+			}
+
+			@include susy-breakpoint ($small, $susy) {
+				@include span(full);
+				padding-bottom: 2rem;
+			}
+
+		}
+
+		.case-image {
+			@include span(7 last);
+			img {
+				width: 100%;
+			}
+
+			@include susy-breakpoint($medium, $susy) {
+				@include span (6 last);
+				height: 100%;
+			}
+
+			@include susy-breakpoint ($small, $susy) {
+				display: none;
+			}
+		}
+
+		.case-image-small {
+			display: none;
+			img {
+				width: 100%;
+			}
+
+			@include susy-breakpoint ($small, $susy) {
+				display: initial;
+			}
+
+		}
+	}
+
+	padding-bottom: 4rem;
+}
+
+// Color of Case Study Text
+#kaizena {
+	a:hover {
+		background-color: #E8FBF9;
+	}
+	.case-image {
+		border-radius: 2px;
+		background-color: #fefefe;
+		transition: 0.2s ease-in;
+		img {
+			transition: .2s ease-in;
+		}
+		&:hover{
+			background-color: #E8FBF9;
+			transition: 0.2s ease-in;
+			img {
+				transform: scale(1.05);
+				transition: .1s ease-in;
+			}
+		}
+		&:active{
+			background-color: #fefefe;
+			transition: .2s ease-in;
+
+			img {
+				transition: .2s ease-in;
+			}
+		}
+	}
+	.case-image-small img{
+		background-color: #fefefe;
+	}
+}
+
+#personal-portfolio {
+
+	a:hover {
+		background-color: #F1F3FF;
+	}
+	.case-image {
+		border-radius: 2px;
+		background-color: #fefefe;
+		transition: 0.2s ease-in;
+		img {
+			transition: .2s ease-in;
+		}
+		&:hover{
+			background-color: #F1F3FF;
+			transition: 0.2s ease-in;
+			img {
+				transform: scale(1.05);
+				transition: .1s ease-in;
+			}
+		}
+		&:active{
+			background-color: #fefefe;
+			transition: .2s ease-in;
+
+			img {
+				transition: .2s ease-in;
+			}
+		}
+	}
+	.case-image-small img{
+		background-color: #fefefe;
+	}
+}
+
+#facebook {
+
+	a:hover {
+		background-color: #F1F3FF;
+	}
+	.case-image {
+		border-radius: 2px;
+		background-color: #fefefe;
+		transition: 0.2s ease-in;
+		img {
+			transition: .2s ease-in;
+		}
+		&:hover{
+			background-color: #F1F3FF;
+			transition: 0.2s ease-in;
+			img {
+				transform: scale(1.05);
+				transition: .1s ease-in;
+			}
+		}
+		&:active{
+			background-color: #fefefe;
+			transition: .2s ease-in;
+
+			img {
+				transition: .2s ease-in;
+			}
+		}
+	}
+	.case-image-small img{
+		background-color: #fefefe;
+	}
+}
+
+footer {
+	@include span(full);
+	padding-bottom: 2rem;
+
+	#get-in-touch {
+		@include span(3); 
+
+		span {
+			display: block;
+		}
+	}
+
+	#outro {
+		@include span(7 last);
+		text-align: justify;
+	}
+
+
+	@include susy-breakpoint($medium, $susy) {
+		p {
+			font-size: 0.875em;
+		}
+		#get-in-touch {
+			@include span(6 first);
+		}
+
+		#outro {
+			@include span(6 last);
+		}
+	}
+
+	@include susy-breakpoint($small, $susy) {
+
+		#get-in-touch {
+			@include span(12);
+		}
+	}
+
+	
+}

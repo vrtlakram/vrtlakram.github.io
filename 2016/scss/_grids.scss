@@ -1,0 +1,38 @@
+// Grids + Breakpoints
+// -------------------
+
+// Susy Grid and Breakpoint import
+@import "susy";
+@import "breakpoint";
+
+// Global import setting
+@include border-box-sizing; //Just incase
+$susy: (
+  columns:					12,
+  container: 				75em,
+  container-position:		center,
+
+  gutters: 					0.25,
+
+  global-box-sizing:		border-box,
+
+  //debug:					(image: show),
+);
+
+
+/*
+$small: 32em 43.75em; // font size upgrade only
+$medium: 43.75em 56.88em; // no font-size change / layout change minimum/ This is where it gets
+$large: 56.88em 75em; //font size upgrade to maximum smaller layout for layout, start trimming layout size of headings
+$xlarge: 75em;// base font is now 18 for p, most awesome layout + right cube layout. 
+*/
+
+$large: 64em 75em;
+$medium: 48em 63.99em;
+$small: max-width 47.99em; 
+$xsmall: max-width 26.56em;
+
+/*
+$small: 26.56em 48em;
+$xsmall: max-width 26.56em;
+*/
