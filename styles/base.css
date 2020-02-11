@@ -1,0 +1,258 @@
+/* Font imports */
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT-America-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT-America-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT-America-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+
+/* Text Elements */
+body {
+    background-color: #F7F9F8;
+
+    color: #1D2832;
+    font-family: 'GT America', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'GT America', system-ui, sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.33;
+    max-width: 52ch;
+}
+b {
+    font-weight: 400;
+}
+
+small {
+    font-size: 0.8em;
+}
+ul li {
+    line-height: 1.66rem;
+}
+
+a {
+    color: #4166F5;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: none;
+
+    border-bottom: solid 1px;
+    border-bottom-color: rgba(54, 77, 170, 0.2);
+}
+a:active {
+    color: #1D2832;
+    border-bottom-color: rgba(65, 102, 245, 0.9);
+}
+
+a:visited {
+    color: #4166F5;
+    border-bottom: none;
+}
+
+.selected {
+    border-bottom: solid 1px;
+    border-bottom-color: rgba(65, 102, 245, 0.6);
+}
+
+#logo a {
+    color: #1D2832;
+}
+#intro > p{
+    font-size: 1.25em;
+}
+
+#title {
+    font-size: 0.8em;
+} 
+
+/* Layout */
+html {
+    scroll-behavior: smooth;
+  }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+
+    min-height: 94vh;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: [logo] 1fr [nav] 5fr;
+    grid-column-gap: 2rem;
+    align-items: end;
+    
+   
+    position: sticky;
+    top: 0;
+    background-color: #F7F9F8;
+
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+header li {
+    display: inline;
+    padding-right: 1.33rem;
+}
+
+section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: [section-title] 1fr [section-content] 5fr;
+    
+    grid-column-gap: 2rem;
+    padding-top: 8rem;
+}
+
+
+#worksection > article {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: [company] 1fr [description] 4fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    justify-items: left;
+
+    padding: 2rem 0rem;
+
+    border-top: 1px rgba(29,40,50,.1) solid;
+}
+
+
+#worksection > article:last-child {
+    border-bottom: 1px rgba(29,40,50,.1) solid;
+}
+
+#company> h3{
+    font-size: 1.20rem;
+}
+
+
+
+
+
+#circle {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #13FF23;
+    box-shadow: 0 0 5px 0 #13FF23;
+    float: right;
+    margin-top: .4rem;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 3rem 0 0;
+}
+
+@media screen and (max-width: 799px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+
+    header {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 1rem;
+
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #title {
+        font-size: 0.878em;
+        display: none;
+    } 
+    
+    #circle {
+        float: left;
+        margin-top: 0.3em;
+        margin-right: 1rem;
+        }
+
+    section {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: .5rem;
+
+    }
+    #worksection > article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding: 0 1rem;
+        padding-top: 3rem;
+    }
+}
+
+/* animation */
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
