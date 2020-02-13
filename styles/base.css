@@ -83,16 +83,13 @@ a:visited {
     border-bottom-color: rgba(65, 102, 245, 0.6);
 }
 
-#logo a {
-    color: #1D2832;
-}
-#intro > p{
-    font-size: 1.25em;
+#logo {
+    font-weight: 500;
 }
 
-#title {
-    font-size: 0.8em;
-} 
+#intro > div > p{
+    font-size: 1.25em;
+}
 
 /* Layout */
 html {
@@ -173,7 +170,7 @@ section {
 footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 3rem 0 0;
+    padding: 3rem 3rem 0 3rem;
 }
 
 @media screen and (max-width: 799px) {
