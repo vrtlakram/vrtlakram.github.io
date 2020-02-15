@@ -28,6 +28,9 @@ body {
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    transition: font-size 0.33s ease;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -40,7 +43,7 @@ h1 {
 
 p {
     line-height: 1.33;
-    max-width: 50ch;
+    max-width: 60ch;
     padding-bottom: 1rem;
 }
 b {
@@ -88,7 +91,7 @@ a:visited {
 
 .link-button {
     padding: .75rem;
-    margin-right: .1rem;
+    margin-right: .2rem;
     background-color:rgba(65, 102, 245, 0.05);
     float: left;
     border-bottom: none;
@@ -101,6 +104,9 @@ a:visited {
     border-bottom: none;
 }
 
+.button-group {
+    padding-top: 1rem;
+}
 
 /* Layout */
 html {
@@ -151,6 +157,10 @@ section {
 
 #intro > div > p{
     font-size: 1.25em;
+}
+
+.intro-paragraph p {
+    max-width: 52ch;
 }
 
 #circle {
@@ -206,10 +216,8 @@ footer {
     padding-bottom: 0;
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        font-size: 18px;
-    }
+
+@media screen and (max-width: 858px) {
     .container {
         padding: 0 1rem;
     }
@@ -258,9 +266,14 @@ footer {
         padding-top: 3rem;
     }
 }
-@media screen and (min-width: 669px)and (max-width: 900px) {
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
 
 }
+
 /* animations */
 .animated {
     -webkit-animation-duration: .5s;
