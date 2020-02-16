@@ -56,55 +56,90 @@
 <div class="container animated fadeIn" id="#top">
 
     <header>
-        <span id="logo">
-            <a href="#top">
-                <h1 class="current">akram.</h1>
-                <small id="title">Product Designer</small>
-            </a>
-        </span>
+        <div>
+            <ul><li><a href="index.html" id="logo" class="selected">akram.</a></li></ul>
+        </div>
         <nav>
             <ul>
-                <li><a href="#work" class="selected">Work</a></li>
                 <li><a href="/static/Akram_S_Product_Designer.pdf" target="_blank">Resume</a></li>
+                <!-- <li><a href="work.html">Work</a></li> -->
                 <li><a href="contact.html">Get in touch</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="intro">
-        <h2></h2>
-        <p>Hi 👋 <br><br>
-            I'm Akram, a product designer who asks a lot of questions and solves problems using behavioral insights and data analysis. I design products and systems for B2B and B2C companies — in a way that makes customers and colleagues feel valued and empowered. 
-            <br><br>
-Before that, I studied Biology & Psychology, with a focus on human behavior and neural processing of vision.
-        </p>
+        <div></div>
+        <div class="intro-paragraph">
+            <p>Hi 👋</p>
+            <p>
+                I'm Akram, a product designer who asks a lot of questions and solves problems using behavioral insights and data analysis. I design products and systems for B2B and B2C companies — in a way that makes customers and colleagues feel valued and empowered. 
+            </p>    
+            <p>Before that, I studied Biology & Psychology, with a focus on human behavior and neural processing of vision.</p>
+            <div class="button-group">
+                <a href="contact.html" class="link-button">Get in touch</a>
+                <a href="/static/Akram_S_Product_Designer.pdf" class="link-button" target="_blank">View resume</a>     
+            </div>
+        </div>
     </section>
 
-    <section id="work">
+    <!-- <section id="featuredWork">
         <div>
-            <h2>Work</h2>
+            <h2>Featured work</h2>
         </div>
-        <div id="worksection">
+        <div>
             <article>
-                <div id="company">
+                <p>Vidyard 1</p>
+            </article>
+            <article>
+                <p>Vidyard 2</p>
+            </article>
+            <article>
+                <p>see all</p>
+            </article>
+        </div>
+    </section> -->
+
+    <section id="experience">
+        <div>
+            <h2>Experience</h2>
+        </div>
+        <div id="work-section">
+            <article>
+                <div class="company">
                     <h3>Vidyard</h3>
                     <small>May 2017 &ndash; Jan 2020</small>
                 </div>
-                <p>Helped people and businesses communicate with video.</p>
+                <div class="company-description">
+                    <p>Helped people and businesses communicate with video.</p>
+                </div>
+                <!-- <div class="case-studies">
+                    <a href="#" class="link-button">Overview</a>
+                </div> -->
             </article>
             <article>
-                <div id="company">
+                <div class="company">
                     <h3>Freelance Design</h3>
                     <small>Jan 2016 &ndash; Today</small>
                 </div>
-                <p>Designed and helped ship mobile and web products for multiple clients.</p>
+                <div class="company-description">
+                    <p>Designed and helped ship mobile and web products for multiple clients.</p>
+                </div>
+                <div class="case-studies">
+                    <!-- <a href="#" class="link-button">1 Case study</a> -->
+                </div>
             </article>
             <article>
-                <div id="company">
+                <div class="company">
                     <h3>Kaizena</h3>
                     <small>Sep 2015 &ndash; Dec 2015</small>
                 </div>
-                <p>Designed and shipped Kaizena's first mobile app.</p>
+                <div class="company-description">
+                    <p>Designed and shipped Kaizena's first mobile app.</p>
+                </div>
+                <div class="case-studies">
+                    <!-- <a href="#" class="link-button">1 Case study</a> -->
+                </div>
             </article>
         </div>
     </section>
