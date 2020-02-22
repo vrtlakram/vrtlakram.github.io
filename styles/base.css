@@ -43,7 +43,7 @@ h1 {
 
 p {
     line-height: 1.33;
-    max-width: 52ch;
+    max-width: 64ch;
     padding-bottom: 1rem;
 }
 b {
@@ -161,11 +161,10 @@ section {
     font-weight: 500;
 }
 
-#intro > div > p{
-    font-size: 1.25em;
-}
 
-.intro-paragraph p {
+
+.intro-paragraph {
+    font-size: 1.5rem;
     max-width: 52ch;
 }
 
