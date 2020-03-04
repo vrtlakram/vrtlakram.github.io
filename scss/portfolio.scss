@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'base';
+
+.company {
+    position: sticky;
+    height: $spacing-small;
+    top: $spacing-large;
+}
+
+section {
+    @extend %section;
+
+    article {
+        padding-bottom: $spacing-medium;
+    }
+    .workSection {
+        border-bottom: $seperator;
+    }
+    .subGrid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+        
+        column-gap: $spacing-small;
+
+    }
+
+    .subCompanies {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+
+        column-gap: $spacing-small;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+
+@media screen and (max-width: 858px) {
+    .company {
+        position: unset;
+        height: unset;
+        top: unset;
+        padding-bottom: $spacing-xsmall;
+    
+    }
+
+}

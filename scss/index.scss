@@ -1,0 +1,126 @@
+@import 'variables';
+@import 'base';
+
+section#intro {
+    padding-bottom: $spacing-medium;
+}
+
+section#availability {
+    padding-bottom: $spacing-medium;
+}
+section#featuredWork {
+    @extend %section;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+section.caseStudies {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media screen and (max-width: 858px) {
+    
+    section#intro {
+        padding-bottom: $spacing-small;
+        row-gap: $spacing-small;
+    }
+    
+    section#availability {
+        padding-bottom: $spacing-small;
+    }
+
+
+
+    section.caseStudies {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    
+}
+
+@media screen and (min-width: 859px) { 
+
+    section#featuredWork {
+        display: grid;
+        grid-template-rows: repeat(2, .2fr);
+        grid-template-columns: repeat(6, 1fr);
+        
+        row-gap: $spacing-xsmall;
+    
+        a {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    
+        #featuredInfo {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    
+        #featuredTitle { 
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+    
+            .title {
+                font-size: $font-size-large;
+            }
+    
+            .date {
+                display: grid;
+                align-items: flex-end;
+            }
+        }
+    
+        #featuredDescription { 
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        .caseStudyInfo{
+            padding-top: unset;
+        }
+    
+    }
+}
+
+
+
+// #featuredInfo {
+//     display: grid;
+//     grid-template-rows: auto;
+//     grid-template-columns: 1fr 1fr;
+
+//     column-gap: $spacing-small;
+//     padding-top: $spacing-xsmall;
+
+//     #featuredTitle {
+//         display: grid;
+
+//         a {
+//             font-size: $font-size-large;
+//         }
+
+//         p {
+//             align-self: end;
+//             margin-bottom: unset;
+//         }
+//     }
+
+//     #featuredDescription {
+//         display: grid;
+//         justify-content: right;
+//         align-self: end;
+
+//         p {
+//             max-width: 42ch;
+//             margin-bottom: unset;
+//         }
+//     }
+// }
