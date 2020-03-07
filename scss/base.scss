@@ -71,6 +71,12 @@ small {
     font-weight: $weight-semibold;
     line-height: 1.33;
 }
+.xsmall {
+    color: $secondary-body-color;
+    font-size: $font-size-xsmall; 
+    font-weight: $weight-semibold;
+    line-height: 1.33;
+}
 
 .large {
     font-size: $font-size-large;
