@@ -86,23 +86,27 @@ small {
 ol {
     padding-left: 1rem;
     list-style: decimal;
+    margin-bottom: 1.15rem;
+
     li {
         line-height: 1.45;
         max-width: 58ch;
-        padding-bottom: 1rem;
         padding-left: 1rem;
+        padding-bottom: 1rem;
     }
+    
 }
 
-ul {
-    
+ul {    
+    padding-left: 1rem;
+    list-style: disc;
+    margin-bottom: 1.15rem;
+
     li {
         line-height: 1.45;
         max-width: 58ch;
+        padding-left: 1rem;
         padding-bottom: 1rem;
-    }
-    li:first-child {
-        padding-top: .35rem;
     }
 } 
 a {
@@ -149,19 +153,26 @@ header {
 
     column-gap: $spacing-small;
     margin-top: $spacing-small;
-    padding-top: $spacing-small;
-    padding-bottom: $spacing-small;
+    padding-top: $spacing-xsmall;
+    padding-bottom: $spacing-xsmall;
 
     z-index: 100;
 
     #logo {
         font-weight: $weight-bold;
     }
+    ul {    
+        padding-left: 0;
+        margin-bottom: 0;
+    
+    } 
 
     li {
         display: inline;
         margin-right: $spacing-small;
         line-height: 1.66rem;
+        padding-left: 0;
+        padding-bottom: 0;
     }
     .selected {
         border-bottom: solid 1px $link-color;

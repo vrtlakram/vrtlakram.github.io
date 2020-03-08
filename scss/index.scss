@@ -17,7 +17,7 @@ section#featuredWork {
 }
 
 section.caseStudies {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     row-gap: $spacing-small;
 
 }
