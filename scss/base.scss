@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     max-width: 62ch;
-    line-height: 1.45;
+    line-height: 1.5;
     margin-bottom: 1.15rem;
 }
 
@@ -375,7 +375,9 @@ section.caseStudies {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
+    h2 {
+        font-size: $font-size-normal;
+    }
     footer {
         small {
             display: none;
