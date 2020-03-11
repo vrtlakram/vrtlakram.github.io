@@ -16,7 +16,6 @@ body {
     letter-spacing: -0.08px;    
     color: $primary-body-color;
 
-    background: $white;
 
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
@@ -241,7 +240,7 @@ section.imageFullWidth {
     }
 
     p:nth-child(2) {
-        max-width: 50ch;
+        max-width: 56ch;
     }
 }
 

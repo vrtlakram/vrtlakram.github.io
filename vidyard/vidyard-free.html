@@ -73,13 +73,16 @@
         <div>
             <p>
                 <b>
-                Vidyard launched a <a href="https://chrome.google.com/webstore/detail/screen-and-webcam-recorde/jiihcciniecimeajcniapbngjjbonjan?hl=en" target="_blank">screen recording chrome extension</a> in late 2016. Mid 2019, and 300k signups later, Vidyard was ready for a self-serve freemium product to advance what the extension had started. This is how we designed the Free tier of Vidyard's first freemium offering.
+                Vidyard launched a <a href="https://chrome.google.com/webstore/detail/screen-and-webcam-recorde/jiihcciniecimeajcniapbngjjbonjan?hl=en" target="_blank">screen recording chrome extension</a> in late 2016. 300k signups later, Vidyard was ready for a self-serve freemium product to advance what the extension had started. This is how we designed the Free tier of Vidyard's first freemium offering.
                 </b>
-            </p>    
+            </p>  
+  
             <p>
+                <video autoplay="" muted="" aria-label="User demonstrating Vidyard recording functionality"> <source src="../static/vidyard_free.mp4" type="video/mp4"> </video> 
                 <a href="../vidyard/vidyard-overview.html" target="_blank">For more context, read a bit about my time at Vidyard, and how I prepared the Vidyard platform for freemium.
                 </a>
             </p>
+            
 
         </div>
     </section>
@@ -131,9 +134,18 @@
                 <li><b>Retention:</b> Percentage of people who returned and created more videos after 3 view notifications.</li>
             </ol>
             <p>   
-                We found these two proxy metrics to be good predictors of free users who had found success with the extension.
+                We found these two proxy metrics to be good predictors of free users who had found success with the extension. We also opted to use the extension as the basis for the new freemium product due to its large userbase and its pre-defined workflow.
             </p>
         </div>
+    </section>
+
+    <section class="imageFullWidth">
+        <figure>
+            <img src="/vidyard/vidyard-free/cst-basic.png" loading="lazy" alt="Create, Share, Track">
+            <figcaption>
+                All features of the extension fit neatly into three categories. The extension operated as an overlay of the current open tab on Chrome, and had no dedicated video library or video edit page like the platform. 
+            </figcaption>
+        </figure>
     </section>
 
     <section>
@@ -141,39 +153,32 @@
             <h2>Existing and new workflows</h2>
         </div>
         <div>
-            <p>We opted to use the extension as the basis for the new freemium product due to its large userbase and its pre-defined workflow:</b></p>
-            <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
-                <figcaption>
-                    Explain the general loop, maximum optimization
-                </figcaption>
-            </figure>
             <p>While evaluating the extension experience for freemium, two limitations quickly appeared:</p>
             <ol>
-                <li>The extension had a limited recording-only experience, and would not help users who already have videos to share&mdash;as most people looking for a video hosting solution usually do.</li>
+                <li>The extension had a limited recording-only experience, and would not help users who already had videos to share&mdash;as most people looking for a video hosting solution usually do.</li>
                 <li>The extension had a limited channel of growth due to its reliance on the Chrome Store.</li>
             </ol>
             <p>Fortunately, I had spent the previous year <a href="https://chrome.google.com/webstore/detail/screen-and-webcam-recorde/jiihcciniecimeajcniapbngjjbonjan?hl=en" target="_blank">simplifying the Vidyard platform</a>  to get it ready for this self-serve experience, and I had already explored a few original workflows combining the platform and extension into one experience.</p>
-            <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
-                <figcaption>
-                    Explain the general loop, maximum optimization
-                </figcaption>
-            </figure>
-            <p>We pared this concept down to its most essential components for an MVP that supported users signing up from:</p>
+            
+            <p>I pared this concept down to its most essential components for an MVP that supported users signing up from:</p>
             <ol>
                 <li>The existing signup channel: A user signing up from the chrome extension.</li>
                 <li>The new signup channel: A user signing up from <a href="https://vidyard.com" target="_blank">vidyard.com</a></li>
             </ol>
             <p>From there, I broke down the new workflows into pages, components, and states, and started working with the engineering team on the first release of the MVP. </p>
-            <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
-                <figcaption>
-                    Explain the general loop, maximum optimization
-                </figcaption>
-            </figure>
         </div>
     </section>
+
+
+    <section class="imageFullWidth">
+        <figure>
+            <img src="/vidyard/vidyard-free/cst-combined.png" loading="lazy" alt="Create, Share and Edit, Track">
+            <figcaption>
+                I wanted to add to the extension experience with minimal impact to standard workflows. Adding the Vidyard platform into the workflow, but directing the user through the same functional path made for a smooth transition for the extension user, while also introducing new features. This also allows the product to function independently of the extension for users signing up from vidyard.com
+            </figcaption>
+        </figure>
+    </section>
+
 
     <section>
         <div>
@@ -181,15 +186,25 @@
         </div>
         <div>
             <p>
-                As we added more functionality, we also introduced a new limitation. We maintained the Vidyard "Free forever" promise of unlimited recording and uploading, but we also added an embed limit of 5 videos. Most brands or businesses had a higher traffic internet presence and would be better served by an enterprise tier if they needed to embed more videos.
+                As more functionality was added, like the ability to upload and embed videos, a new limitation was introduced. Embeds were limited to 5 videos, as most brands or businesses had a higher traffic internet presence and they would be better served by an enterprise tier.
             </p>
-            <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
-                <figcaption>
-                    Explain the general loop, maximum optimization
-                </figcaption>
-            </figure>
         </div>
+    </section>
+
+    <section class="imageFullWidth">
+        <figure>
+            <img src="/vidyard/vidyard-free/share-modal.png" loading="lazy" alt="Create, Share and Edit, Track">
+            <figcaption>
+                The different states that the share modal&mdash;which contained the embedding feature&mdash;would go through based on the limit. 
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/vidyard/vidyard-free/graceful-degredation.png" loading="lazy" alt="Create, Share and Edit, Track">
+            <figcaption>
+                When embed limits are reached, graceful fallbacks were designed to always allow access to videos. Product triggers were then implemented to suggest the correct product tier a user should be on based on these product limits.
+            </figcaption>
+        </figure>
     </section>
 
     <section>
@@ -198,15 +213,18 @@
         </div>
         <div>
             <p>
-                To help new users, and returning extension users being introduced to the new workflows, we implemented <a href="https://www.appcues.com/" target="_blank">Appcues</a>&mdash;a product tour platform. I designed customized tours based on the signup channels and usage metrics. The flows were described as charming and <a href="https://www.reallygoodux.io/blog/vidyard-charming-user-onboarding-flow" target="_blank">featured on the ReallyGoodUX blog.</a>
+                To help new users, and returning extension users being introduced to the new workflows, we implemented <a href="https://www.appcues.com/" target="_blank">Appcues</a>&mdash;a product tour platform. I designed customized tours based on the signup channels and usage metrics. The flows were <a href="https://www.reallygoodux.io/blog/vidyard-charming-user-onboarding-flow" target="_blank">featured on the ReallyGoodUX blog and were described as charming.</a>
             </p>
-            <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
-                <figcaption>
-                   Julie
-                </figcaption>
-            </figure>
         </div>
+    </section>
+
+    <section class="imageFullWidth">
+        <figure>
+            <img src="/vidyard/vidyard-free/apccues.png" loading="lazy" alt="Appcues onboarding">
+            <figcaption>
+                The illustration was created by the amazing <a href="https://dribbble.com/jushmu" target="_blank">Julie Campbell.</a>
+            </figcaption>
+        </figure>
     </section>
 
     <section>
@@ -215,23 +233,24 @@
         </div>
         <div>
             <p>
-                <b>The new pages, components, and Appcues came together just in time with a coinciding marketing push</b> and it was all thanks to the organizational efforts of <a href="https://www.linkedin.com/in/starkmike/" target="_blank">Mike Stark </a>(Engineering Lead) and <a href="https://www.linkedin.com/in/ashtonrankin/" target="blank">Ashton Rankin</a> (Product Manager) 🎉💃
+                The new pages, components, and Appcues came together just in time with a coinciding marketing launch. We launched the Free tier and immediately saw some amazing results. 
             </p>
-            <p>
-                <b>We almost doubled the number of user-signups overnight!</b> The time-to-activation and retention metrics were meeting expectations within two weeks, and the external feedback was encouraging!
-            </p>
+
+            <p><b>The number of new signups almost doubled overnight!</b> The time-to-activation and retention metrics met expectations within two weeks, and the external feedback was encouraging!</p>
+            
             <figure>
-                <img src="/vidyard/vidyard-overview/..." loading="eager" alt="Create, Share, Track">
+                <img src="/vidyard/vidyard-free/hubspot-feedback.png" loading="lazy" alt="Appcues onboarding">
                 <figcaption>
-                   Julie
+                    Feedback from Victoria&mdash;a Product manager from our biggest partner, HubSpot. The fact that this new product launch was interpreted as a redesign shows the care and coherency we were able to maintain for the extension users, something I am very proud of.
                 </figcaption>
             </figure>
 
             <p>
-                The fact that this was interpreted as a redesign and not a new product launch shows the care and coherency we were able to maintain for the extension users, something I am very proud of. We also made hundreds of design and tech decisions, all the while making sure we were preparing for the following Pro tier of the product.
+                By this point, hundreds of design, tech, and product decisions were made, all in preparation for the upcoming Pro tier of the freemium product, and everything had launched on time.  It was all thanks to the organizational efforts of <a href="https://www.linkedin.com/in/starkmike/" target="_blank">Mike Stark </a>(Engineering Lead) and <a href="https://www.linkedin.com/in/ashtonrankin/" target="blank">Ashton Rankin</a> (Product Manager), <b>none of this would've been possible without them </b> 🎉💃
             </p>
-
-            <p>Part 2: 1000 paying customers within 6 months of launch&mdash;coming soon!</p>
+            <p>
+                <b>Part 2: 1000 paying customers within 6 months of launch - coming soon!</b> 
+            </p>
         </div>
     </section>
 
