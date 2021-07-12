@@ -1,0 +1,151 @@
+html {
+    font-size: 100%;
+    font-kerning: normal;
+
+    scroll-behavior: smooth;
+    background-color: #D8FFEA;
+
+} 
+
+@font-face {
+    font-family: "GT America Medium";
+    src: url("../fonts/GT-America-Medium.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT-America-Regular.woff") format("woff");
+}
+
+
+body {
+
+    color:#1C1C1C;
+
+    font-family: 'GT America', sans-serif;
+
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    letter-spacing: -0.1px;    
+
+    margin: 6rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 28px;
+    
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    
+    font-size: 20px;
+    max-width: 500px;
+
+    opacity: 0.7;
+
+    padding-top: 0px;
+}
+
+#small {
+    font-size: 18px;
+    max-width: 500px;
+    opacity: 0.7;
+
+}
+
+header {
+    padding-bottom: 8rem;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+}
+
+#profile {
+    width: 68px;
+    height: 68px;
+    padding-right: 24px;
+}
+
+section {
+    padding-bottom: 4rem;
+    
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+}
+
+.section-title {
+    min-width: 200px;
+}
+
+
+
+
+footer {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+    opacity: 0.5;
+}
+
+li {
+    list-style: none;
+    padding-bottom: .5rem;
+    font-size: 18px;
+}   
+
+ /* unvisited link */
+ a:link {
+    color:#1C1C1C;
+    text-decoration: underline;
+}
+  
+  /* visited link */
+a:visited {
+    color:#1C1C1C;
+    opacity: 0.7;
+}
+
+/* mouse over link */
+a:hover {
+    color:#1C1C1C;
+    text-decoration: underline wavy;
+}
+
+/* selected link */
+a:active {
+    color:#1C1C1C;
+    text-decoration: underline;
+} 
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 640px) {
+    body {
+        margin: 2rem;
+    }
+
+    header {
+        padding-bottom: 4rem;
+    }
+    
+    section {
+        padding-bottom: 2rem;
+        flex-direction: column;
+    }
+
+
+}
