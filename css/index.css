@@ -3,7 +3,7 @@ html {
     font-kerning: normal;
 
     scroll-behavior: smooth;
-    background-color: #D8FFEA;
+    background-color: #010313;
 
 } 
 
@@ -20,7 +20,7 @@ html {
 
 body {
 
-    color:#1C1C1C;
+    color:#DDE1FF;
 
     font-family: 'GT America', sans-serif;
 
@@ -51,7 +51,7 @@ p {
     font-size: 20px;
     max-width: 500px;
 
-    opacity: 0.7;
+    opacity: 1;
 
     
 }
@@ -59,7 +59,7 @@ p {
 #small {
     font-size: 18px;
     max-width: 500px;
-    opacity: 0.7;
+    opacity: 1;
 
 }
 
@@ -115,22 +115,22 @@ li {
 
  /* unvisited link */
  a:link {
-    color:#1C1C1C;
+    color:#AD9DF8;
     text-decoration: underline;
-    opacity: 0.7;
+    opacity: 1;
 
 }
 
   /* visited link */
 a:visited {
-    color:#1C1C1C;
-    opacity: 0.7;
+    color:#AD9DF8;
+    opacity: 1;
 }
 
 
 /* mouse over link */
 a:hover {
-    color:#1C1C1C;
+    color:#AD9DF8;
     text-decoration: underline wavy;
     opacity: 1;
 
@@ -138,7 +138,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color:#1C1C1C;
+    color:#AD9DF8;
     text-decoration: underline;
 } 
 
