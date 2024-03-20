@@ -3,7 +3,7 @@ html {
     font-kerning: normal;
 
     scroll-behavior: smooth;
-    background-color: #010313;
+    background-color: #DDE1FF;
 
 } 
 
@@ -20,7 +20,7 @@ html {
 
 body {
 
-    color:#DDE1FF;
+    color:#010313;
 
     font-family: 'GT America', sans-serif;
 
@@ -115,7 +115,7 @@ li {
 
  /* unvisited link */
  a:link {
-    color:#AD9DF8;
+    color:#413188;
     text-decoration: underline;
     opacity: 1;
 
@@ -123,14 +123,14 @@ li {
 
   /* visited link */
 a:visited {
-    color:#AD9DF8;
+    color:#413188;
     opacity: 1;
 }
 
 
 /* mouse over link */
 a:hover {
-    color:#AD9DF8;
+    color:#413188;
     text-decoration: underline wavy;
     opacity: 1;
 
@@ -138,7 +138,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color:#AD9DF8;
+    color:#413188;
     text-decoration: underline;
 } 
 
