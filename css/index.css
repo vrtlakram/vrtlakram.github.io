@@ -3,56 +3,128 @@ html {
     font-kerning: normal;
 
     scroll-behavior: smooth;
-    background-color: #DDE1FF;
+    background-color: #FAF5F1;
 
 } 
 
-@font-face {
-    font-family: "GT America Medium";
-    src: url("../fonts/GT-America-Medium.woff") format("woff");
-  }
+/* Flexbox container for body content */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Content area takes up available space */
+.container {
+    flex: 1;
+}
 
 @font-face {
-    font-family: "GT America";
-    src: url("../fonts/GT-America-Regular.woff") format("woff");
+  font-family: 'GT America';
+  src: url('/fonts/gt-america/standard/Webfonts/GT-America-Regular.woff') format('woff'),   
+       url('/fonts/gt-america/standard/OTF/GT-America-Regular.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT America Medium';
+    src: url('/fonts/gt-america/standard/Webfonts/GT-America-Medium.woff') format('woff'),   
+         url('/fonts/gt-america/standard/OTF/GT-America-Medium.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super';
+    src: url('/fonts/GT-Super/GT-Super-Display-Regular-Trial.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 
 body {
 
-    color:#010313;
+    color:#2C2C2C;
 
-    font-family: 'GT America', sans-serif;
+    font-family: 'GT America', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /*letter-spacing: -0.015em; */
 
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    letter-spacing: -0.1px;    
+    -moz-osx-font-smoothing: grayscale; 
 
     margin: 6rem;
     margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    font-size: 28px;
+
+
+#intro {
+
+    font-family: 'GT Super', Arial, Helvetica, sans-serif;
+    font-size: 2.074rem;
     
     margin-top: 0px;
     margin-bottom: 4px;
+
+    max-width: 720px;
+
+    font-size: 36px;
+    line-height: 40px;
+    /* or 111% */
+    letter-spacing: -0.01em;
+
+    color: #1F1F1F;
+
+
+}
+
+#intro > u {
+    text-decoration: underline solid #FF9D00;
 }
 
 h2 {
     font-size: 20px;
     margin-bottom: 0px;
+
+
+
+    width: 54px;
+    height: 40px;
+
+    font-family: 'GT Super Ds Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+
+    color: #1F1F1F;
+    
+    padding-bottom: 16px;
 }
 
 p {
     
     font-size: 20px;
-    max-width: 500px;
+    max-width: 600px;
 
     opacity: 1;
-
     
 }
 
@@ -72,17 +144,13 @@ header {
     align-items: flex-start;
 }
 
-#profile {
-    width: 68px;
-    height: 68px;
-    padding-right: 24px;
-}
+
 
 section {
     padding-bottom: 4rem;
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     align-items: baseline;
 }
@@ -91,12 +159,38 @@ section {
     min-width: 200px;
 }
 
+#availability {
+    flex-direction: row;
+    align-items: center;
 
+}
+.blinking-dot {
+    width: 10px;
+    height: 10px;
+    background: #FF9D00;
+    box-shadow: 0px 0px 10px 10px rgba(249, 105, 1, 0.25);
+    border-radius: 50%; /* Optional: makes it circular */
+    margin-right: 16px;
+
+    
+    /* Animation */
+    animation: blink 5s infinite ease-in-out;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1; /* Fully visible */
+      box-shadow: 0px 0px 10px 10px rgba(249, 105, 1, 0.25);
+    }
+    50% {
+      opacity: 0.2; /* Fades to a lower opacity */
+      box-shadow: 0px 0px 5px 5px rgba(249, 105, 1, 0.1); /* Softer glow */
+    }
+  }
 
 
 footer {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+
     
     opacity: 0.5;
 }
@@ -115,7 +209,7 @@ li {
 
  /* unvisited link */
  a:link {
-    color:#413188;
+    color:#2C2C2C;
     text-decoration: underline;
     opacity: 1;
 
@@ -123,24 +217,25 @@ li {
 
   /* visited link */
 a:visited {
-    color:#413188;
+    color:#2C2C2C;
     opacity: 1;
 }
 
 
 /* mouse over link */
 a:hover {
-    color:#413188;
+    color:#2C2C2C;
     text-decoration: underline wavy;
     opacity: 1;
-
+    
 }
 
 /* selected link */
 a:active {
-    color:#413188;
+    color:#2C2C2C;
     text-decoration: underline;
 } 
+
 
 
 /* Breakpoints */
