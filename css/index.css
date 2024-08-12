@@ -121,7 +121,7 @@ h2 {
 
 p {
     
-    font-size: 20px;
+    font-size: 18px;
     max-width: 600px;
 
     opacity: 1;
@@ -165,8 +165,8 @@ section {
 
 }
 .blinking-dot {
-    width: 10px;
-    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
     background: #FF9D00;
     box-shadow: 0px 0px 10px 10px rgba(249, 105, 1, 0.25);
     border-radius: 50%; /* Optional: makes it circular */
