@@ -72,7 +72,9 @@ body {
     flex-direction: column;
 }
 
-
+#about {
+    padding-top: 6rem;
+}
 
 #intro {
 
@@ -142,6 +144,7 @@ header {
     flex-direction: row;
 
     align-items: flex-start;
+    position: fixed;
 }
 
 
