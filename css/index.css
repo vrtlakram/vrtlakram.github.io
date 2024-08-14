@@ -7,20 +7,20 @@ html {
 
 } 
 
+
 /* Flexbox container for body content */
 body {
-    display: flex;
-    flex-direction: column;
+
+    max-width: 1440px;
+    margin: auto;
+
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
+
 
 /* Content area takes up available space */
 .container {
-    flex: 1;
+    padding: 2rem;
 }
 
 @font-face {
@@ -64,12 +64,6 @@ body {
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
-
-    margin: 6rem;
-    margin-bottom: 1rem;
-
-    display: flex;
-    flex-direction: column;
 }
 
 #about {
@@ -244,10 +238,10 @@ a:active {
 /* Breakpoints */
 
 @media screen and (max-width: 640px) {
-    body {
-        margin: 2rem;
+    .container {
+        padding: 2rem;
     }
-
+    
     header {
         padding-bottom: 4rem;
     }
